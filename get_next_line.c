@@ -6,41 +6,60 @@
 /*   By: antandre <antandre@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/17 15:29:42 by antandre          #+#    #+#             */
-/*   Updated: 2024/07/17 20:18:38 by antandre         ###   ########.fr       */
+/*   Updated: 2024/07/24 18:18:56 by antandre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
+#include "get_next_line.h"
 
 char	*get_next_line(int fd)
 {
-	static char *saved[];
-	int readed;
-	char *buffer;
+	static char	*saved[1024];
+	int			readed;
+	char		*buffer;
 
-	while (!buffer || !ft_isnewline(buffer))
+	if (saved[fd] && ft_isnewline(saved[fd]) > 0)
+		return (ft_strtrim_jump(&saved[fd]));
+	else
 	{
-		readed = read(fd, buffer, BUFFER_SIZE);
-		//Funcion guardar lo que sobra en saved2
-		//Funcion concatenar mas free y allocar nuevo espacio readed
+		buffer = NULL;
+		while (!ft_isnewline(saved[fd]))
+		{
+			buffer = malloc(BUFFER_SIZE * sizeof(char));
+			if (!buffer)
+				return (NULL);
+			readed = read(fd, buffer, BUFFER_SIZE);
+			if (readed > 0)
+				readed = ft_strncat(&saved[fd], buffer, readed);
+			free(buffer);
+			buffer = NULL;
+			if (!readed)
+				return (NULL);
+		}
+		return (ft_strtrim_jump(&saved[fd]));
 	}
-	saved = malloc(readed * sizeof(char));
-	if (!saved)
-		return (NULL);
-		
-	//Funcion buscar \n en save
-		//True - Funcion leer
-		//False - Funcion leer 
+	return (NULL);
 }
 
 int	main(void)
 {
-	int fd;
+	int		fd;
+	int		fd2;
+	int		x;
+	char	*line;
 
-	fd = open("a", 0_RDONLY);
-
-	while()
+	x = 15;
+	fd = open("a", O_RDONLY);
+	fd2 = open("b", O_RDONLY);
+	while (--x > 0)
 	{
-		get_next_line(fd);
+		line = get_next_line(fd);
+		printf("%s", line);
+		free(line);
+		line = NULL;
+		line = get_next_line(fd2);
+		printf("%s", line);
+		free(line);
+		line = NULL;
 	}
 }
