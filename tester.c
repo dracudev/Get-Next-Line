@@ -6,31 +6,43 @@
 /*   By: antandre <antandre@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/25 10:55:56 by antandre          #+#    #+#             */
-/*   Updated: 2024/07/25 10:56:37 by antandre         ###   ########.fr       */
+/*   Updated: 2024/07/30 15:02:22 by antandre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
+#include <stdio.h>
 
-int	main(void)
+int main(int argc, char *argv[])
 {
-	int		fd;
-	int		fd2;
-	int		x;
-	char	*line;
+    if (argc < 2)
+    {
+        fprintf(stderr, "Usage: %s <file1> <file2> ... <file20>\n", argv[0]);
+        return 1;
+    }
 
-	x = 15;
-	fd = open("a", O_RDONLY);
-	fd2 = open("b", O_RDONLY);
-	while (--x > 0)
-	{
-		line = get_next_line(fd);
-		printf("%s", line);
-		free(line);
-		line = NULL;
-		line = get_next_line(fd2);
-		printf("%s", line);
-		free(line);
-		line = NULL;
-	}
+    for (int i = 1; i < argc; i++)
+    {
+        int fd = open(argv[i], O_RDONLY);
+        char *line = get_next_line(fd);
+        if (fd == -1)
+        {
+            printf("%s", line);
+            continue;
+        }
+        printf("Reading from %s:\n", argv[i]);
+        while (line || line == NULL)
+        {
+            printf("Retrieved line: %s", line);
+            if (line == NULL)
+				break;
+			free(line);
+			line = NULL;
+			line = get_next_line(fd);
+        }
+		printf("\n");
+        printf("Finished reading from %s\n\n", argv[i]);
+        close(fd);
+    }
+    return (0);
 }

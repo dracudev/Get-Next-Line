@@ -6,7 +6,7 @@
 /*   By: antandre <antandre@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/17 16:08:42 by antandre          #+#    #+#             */
-/*   Updated: 2024/07/24 18:18:10 by antandre         ###   ########.fr       */
+/*   Updated: 2024/07/30 13:41:00 by antandre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,16 @@ int	ft_isnewline(char *buffer)
 
 	i = 0;
 	if (!buffer)
-		return (0);
+	{
+		return (-1);
+	}
 	while (buffer[i])
 	{
 		if (buffer[i] == '\n')
 			return (i);
 		i++;
 	}
-	return (0);
+	return (-1);
 }
 
 int	ft_strlen(char *str)

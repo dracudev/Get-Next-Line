@@ -1,28 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   tester2.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: antandre <antandre@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/24 10:41:16 by antandre          #+#    #+#             */
-/*   Updated: 2024/07/24 18:17:21 by antandre         ###   ########.fr       */
+/*   Created: 2024/07/30 10:45:37 by antandre          #+#    #+#             */
+/*   Updated: 2024/07/30 13:29:02 by antandre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_BONUS_H
-# define GET_NEXT_LINE_BONUS_H
+#include "get_next_line.h"
 
-# include <limits.h>
-# include <fcntl.h>
-# include <unistd.h>
-# include <stdlib.h>
-# include <stdio.h>
+int	main(void)
+{
+	int		fd;
+	//int		fd2;
+	int		x;
+	char	*line;
 
-char	*get_next_line(int fd);
-int		ft_isnewline(char *buffer);
-int		ft_strlen(char *str);
-int		ft_strncat(char **saved, char *buffer, int buffer_size);
-char	*ft_strtrim_jump(char **saved);
-
-#endif
+	x = 15;
+	fd = open("42", O_RDONLY);
+	//fd2 = open("B", O_RDONLY);
+	while (--x > 0)
+	{
+		line = get_next_line(fd);
+		printf("%s", line);
+		free(line);
+		line = NULL;
+		//line = get_next_line(fd2);
+		//printf("%s", line);
+		//free(line);
+		//line = NULL;
+	}
+}

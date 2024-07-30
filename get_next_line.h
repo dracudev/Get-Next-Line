@@ -6,12 +6,16 @@
 /*   By: antandre <antandre@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/24 10:41:16 by antandre          #+#    #+#             */
-/*   Updated: 2024/07/24 18:17:21 by antandre         ###   ########.fr       */
+/*   Updated: 2024/07/30 15:57:15 by antandre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef GET_NEXT_LINE_H
 # define GET_NEXT_LINE_H
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 1
+# endif
 
 # include <limits.h>
 # include <fcntl.h>
