@@ -1,0 +1,583 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                Welcome to Francinette, a 42 tester framework!                ║
+╚═══════════════════════╦══════════════════════════════╦═══════════════════════╝
+                        ║         get_next_line        ║
+                        ╚══════════════════════════════╝
+⠋ Preparing framework⠙ Preparing framework✔ Preparing framework
+⠋ Executing: norminette⠙ Executing: norminette⠹ Executing: norminette⠸ Executing: norminette✖ Executing: norminette
+get_next_line.c: Error!
+Error: LINE_TOO_LONG        (line:  39, col:  13):	line too long
+Error: WRONG_SCOPE_COMMENT  (line:  39, col:  13):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line:  39, col: 117):	line too long
+Error: TOO_MANY_LINES       (line:  46, col:   1):	Function has more than 25 lines
+get_next_line.h: OK!
+get_next_line_utils.c: OK!
+tester.c: Error!
+Error: SPACE_BEFORE_FUNC    (line:  16, col:   4):	space before function name
+Error: TOO_FEW_TAB          (line:  18, col:   1):	Missing tabs for indent level
+Error: SPACE_REPLACE_TAB    (line:  18, col:   5):	Found space when expecting tab
+Error: TOO_FEW_TAB          (line:  19, col:   1):	Missing tabs for indent level
+Error: SPACE_EMPTY_LINE     (line:  19, col:   5):	Space on empty line
+Error: TOO_FEW_TAB          (line:  20, col:   1):	Missing tabs for indent level
+Error: SPACE_REPLACE_TAB    (line:  20, col:   9):	Found space when expecting tab
+Error: TOO_FEW_TAB          (line:  21, col:   1):	Missing tabs for indent level
+Error: SPACE_REPLACE_TAB    (line:  21, col:   9):	Found space when expecting tab
+Error: RETURN_PARENTHESIS   (line:  21, col:  16):	Return value must be in parenthesis
+Error: TOO_FEW_TAB          (line:  22, col:   1):	Missing tabs for indent level
+Error: SPACE_EMPTY_LINE     (line:  22, col:   5):	Space on empty line
+Error: EMPTY_LINE_FUNCTION  (line:  23, col:   1):	Empty line in function
+Error: TOO_FEW_TAB          (line:  24, col:   1):	Missing tabs for indent level
+Error: FORBIDDEN_CS         (line:  24, col:   5):	Forbidden control structure
+Error: SPACE_REPLACE_TAB    (line:  24, col:   5):	Found space when expecting tab
+Error: TOO_FEW_TAB          (line:  25, col:   1):	Missing tabs for indent level
+Error: SPACE_EMPTY_LINE     (line:  25, col:   5):	Space on empty line
+Error: TOO_FEW_TAB          (line:  26, col:   1):	Missing tabs for indent level
+Error: WRONG_SCOPE_VAR      (line:  26, col:   1):	Variable declared in incorrect scope
+Error: SPACE_REPLACE_TAB    (line:  26, col:   9):	Found space when expecting tab
+Error: SPACE_REPLACE_TAB    (line:  26, col:  12):	Found space when expecting tab
+Error: DECL_ASSIGN_LINE     (line:  26, col:  16):	Declaration and assignation on a single line
+Error: TOO_FEW_TAB          (line:  27, col:   1):	Missing tabs for indent level
+Error: WRONG_SCOPE_VAR      (line:  27, col:   1):	Variable declared in incorrect scope
+Error: SPACE_REPLACE_TAB    (line:  27, col:   9):	Found space when expecting tab
+Error: SPACE_REPLACE_TAB    (line:  27, col:  13):	Found space when expecting tab
+Error: MISALIGNED_VAR_DECL  (line:  27, col:  14):	Misaligned variable declaration
+Error: DECL_ASSIGN_LINE     (line:  27, col:  20):	Declaration and assignation on a single line
+Error: TOO_FEW_TAB          (line:  28, col:   1):	Missing tabs for indent level
+Error: SPACE_REPLACE_TAB    (line:  28, col:   9):	Found space when expecting tab
+Error: TOO_FEW_TAB          (line:  29, col:   1):	Missing tabs for indent level
+Error: SPACE_EMPTY_LINE     (line:  29, col:   9):	Space on empty line
+Error: TOO_FEW_TAB          (line:  30, col:   1):	Missing tabs for indent level
+Error: SPACE_REPLACE_TAB    (line:  30, col:  13):	Found space when expecting tab
+Error: TOO_FEW_TAB          (line:  31, col:   1):	Missing tabs for indent level
+Error: SPACE_AFTER_KW       (line:  31, col:  13):	Missing space after keyword
+Error: SPACE_REPLACE_TAB    (line:  31, col:  13):	Found space when expecting tab
+Error: TOO_FEW_TAB          (line:  32, col:   1):	Missing tabs for indent level
+Error: SPACE_EMPTY_LINE     (line:  32, col:   9):	Space on empty line
+Error: TOO_FEW_TAB          (line:  33, col:   1):	Missing tabs for indent level
+Error: SPACE_REPLACE_TAB    (line:  33, col:   9):	Found space when expecting tab
+Error: TOO_FEW_TAB          (line:  34, col:   1):	Missing tabs for indent level
+Error: SPACE_REPLACE_TAB    (line:  34, col:   9):	Found space when expecting tab
+Error: TOO_FEW_TAB          (line:  35, col:   1):	Missing tabs for indent level
+Error: SPACE_EMPTY_LINE     (line:  35, col:   9):	Space on empty line
+Error: TOO_FEW_TAB          (line:  36, col:   1):	Missing tabs for indent level
+Error: SPACE_REPLACE_TAB    (line:  36, col:  13):	Found space when expecting tab
+Error: TOO_FEW_TAB          (line:  37, col:   1):	Missing tabs for indent level
+Error: SPACE_REPLACE_TAB    (line:  37, col:  13):	Found space when expecting tab
+Error: SPACE_AFTER_KW       (line:  38, col:  17):	Missing space after keyword
+Error: TOO_FEW_TAB          (line:  42, col:   1):	Missing tabs for indent level
+Error: SPACE_EMPTY_LINE     (line:  42, col:   9):	Space on empty line
+Error: TOO_FEW_TAB          (line:  44, col:   1):	Missing tabs for indent level
+Error: SPACE_REPLACE_TAB    (line:  44, col:   9):	Found space when expecting tab
+Error: TOO_FEW_TAB          (line:  45, col:   1):	Missing tabs for indent level
+Error: SPACE_REPLACE_TAB    (line:  45, col:   9):	Found space when expecting tab
+Error: TOO_FEW_TAB          (line:  46, col:   1):	Missing tabs for indent level
+Error: SPACE_EMPTY_LINE     (line:  46, col:   5):	Space on empty line
+Error: TOO_FEW_TAB          (line:  47, col:   1):	Missing tabs for indent level
+Error: SPACE_REPLACE_TAB    (line:  47, col:   5):	Found space when expecting tab
+Error: TOO_MANY_LINES       (line:  48, col:   1):	Function has more than 25 lines
+tester2.c: Error!
+Error: WRONG_SCOPE_COMMENT  (line:  18, col:   5):	Comment is invalid in this scope
+Error: VAR_DECL_START_FUNC  (line:  19, col:   1):	Variable declaration not at start of function
+Error: VAR_DECL_START_FUNC  (line:  20, col:   1):	Variable declaration not at start of function
+Error: WRONG_SCOPE_COMMENT  (line:  24, col:   5):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  31, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  32, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  33, col:   9):	Comment is invalid in this scope
+Error: WRONG_SCOPE_COMMENT  (line:  34, col:   9):	Comment is invalid in this scope
+get_next_line_bonus.c: Error!
+Error: LINE_TOO_LONG        (line:  39, col:  13):	line too long
+Error: WRONG_SCOPE_COMMENT  (line:  39, col:  13):	Comment is invalid in this scope
+Error: LINE_TOO_LONG        (line:  39, col: 117):	line too long
+Error: TOO_MANY_LINES       (line:  46, col:   1):	Function has more than 25 lines
+get_next_line_utils_bonus.c: OK!
+get_next_line_bonus.h: OK!
+
+ℹ Running tests: gnlTester (https://github.com/Tripouille/gnlTester)
+[34m[Mandatory]
+[37m[BUFFER_SIZE = 1]: [0m
+[37mInvalid fd: [93m1.TIMEOUT
+[33m1.TIMEOUT[0m
+[37mfiles/empty: [32m1.OK [32m2.OK [0m
+[37mfiles/nl: [32m1.OK [32m2.OK [0m
+[37mfiles/41_no_nl: ==7045== Invalid read of size 1
+==7045==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7045==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7045==    by 0x405325: main (mandatory.cpp:45)
+==7045==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7045== 
+[93m1.SIGSEGV
+[37mfiles/41_with_nl: [32m1.OK ==7046== Invalid read of size 1
+==7046==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7046==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7046==    by 0x40561C: main (mandatory.cpp:50)
+==7046==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7046== 
+[93m2.SIGSEGV
+[37mfiles/42_no_nl: ==7047== Invalid read of size 1
+==7047==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7047==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7047==    by 0x405901: main (mandatory.cpp:56)
+==7047==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7047== 
+[93m1.SIGSEGV
+[37mfiles/42_with_nl: [32m1.OK ==7048== Invalid read of size 1
+==7048==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7048==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7048==    by 0x405BF8: main (mandatory.cpp:61)
+==7048==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7048== 
+[93m2.SIGSEGV
+[37mfiles/43_no_nl: ==7049== Invalid read of size 1
+==7049==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7049==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7049==    by 0x405EE7: main (mandatory.cpp:72)
+==7049==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7049== 
+[93m1.SIGSEGV
+[37mfiles/43_with_nl: [32m1.OK ==7050== Invalid read of size 1
+==7050==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7050==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7050==    by 0x4061DE: main (mandatory.cpp:77)
+==7050==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7050== 
+[93m2.SIGSEGV
+[37mfiles/multiple_nlx5: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [0m
+[37mfiles/multiple_line_no_nl: [32m1.OK [32m2.OK [32m3.OK [32m4.OK ==7052== Invalid read of size 1
+==7052==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7052==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7052==    by 0x406838: main (mandatory.cpp:92)
+==7052==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7052== 
+[93m5.SIGSEGV
+[37mfiles/multiple_line_with_nl: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [0m
+[37mfiles/alternate_line_nl_no_nl: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [32m7.OK [32m8.OK ==7054== Invalid read of size 1
+==7054==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7054==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7054==    by 0x406EDA: main (mandatory.cpp:110)
+==7054==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7054== 
+[93m9.SIGSEGV
+[37mfiles/alternate_line_nl_with_nl: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [32m7.OK [32m8.OK [32m9.OK [32m10.OK [0m
+[37mfiles/big_line_no_nl: ==7056== Invalid read of size 1
+==7056==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7056==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7056==    by 0x407534: main (mandatory.cpp:136)
+==7056==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7056== 
+[93m1.SIGSEGV
+[37mfiles/big_line_with_nl: [32m1.OK [32m2.OK [0m
+[37mstdin: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [32m7.OK [32m8.OK [32m9.OK [32m10.OK [0m
+
+[37m[BUFFER_SIZE = 42]: [0m
+[37mInvalid fd: [93m1.TIMEOUT
+[33m1.TIMEOUT[0m
+[37mfiles/empty: [32m1.OK [32m2.OK [0m
+[37mfiles/nl: [32m1.OK [32m2.OK [0m
+[37mfiles/41_no_nl: ==7116== Invalid read of size 1
+==7116==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7116==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7116==    by 0x405325: main (mandatory.cpp:45)
+==7116==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7116== 
+[93m1.SIGSEGV
+[37mfiles/41_with_nl: [32m1.OK ==7117== Invalid read of size 1
+==7117==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7117==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7117==    by 0x40561C: main (mandatory.cpp:50)
+==7117==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7117== 
+[93m2.SIGSEGV
+[37mfiles/42_no_nl: ==7118== Invalid read of size 1
+==7118==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7118==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7118==    by 0x405901: main (mandatory.cpp:56)
+==7118==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7118== 
+[93m1.SIGSEGV
+[37mfiles/42_with_nl: [32m1.OK [32m2.OK [32m3.OK [0m
+[37mfiles/43_no_nl: ==7120== Invalid read of size 1
+==7120==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7120==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7120==    by 0x405F19: main (mandatory.cpp:72)
+==7120==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7120== 
+[93m1.SIGSEGV
+[37mfiles/43_with_nl: [32m1.OK ==7121== Invalid read of size 1
+==7121==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7121==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7121==    by 0x406210: main (mandatory.cpp:77)
+==7121==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7121== 
+[93m2.SIGSEGV
+[37mfiles/multiple_nlx5: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [0m
+[37mfiles/multiple_line_no_nl: [32m1.OK [32m2.OK [32m3.OK [32m4.OK ==7123== Invalid read of size 1
+==7123==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7123==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7123==    by 0x40686A: main (mandatory.cpp:92)
+==7123==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7123== 
+[93m5.SIGSEGV
+[37mfiles/multiple_line_with_nl: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [0m
+[37mfiles/alternate_line_nl_no_nl: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [32m7.OK [32m8.OK ==7125== Invalid read of size 1
+==7125==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7125==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7125==    by 0x406F0C: main (mandatory.cpp:110)
+==7125==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7125== 
+[93m9.SIGSEGV
+[37mfiles/alternate_line_nl_with_nl: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [32m7.OK [32m8.OK [32m9.OK [32m10.OK [0m
+[37mfiles/big_line_no_nl: ==7127== Invalid read of size 1
+==7127==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7127==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7127==    by 0x407566: main (mandatory.cpp:136)
+==7127==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7127== 
+[93m1.SIGSEGV
+[37mfiles/big_line_with_nl: [32m1.OK [32m2.OK [0m
+[37mstdin: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [32m7.OK [32m8.OK [32m9.OK [32m10.OK [0m
+
+[37m[BUFFER_SIZE = 10000000]: [0m
+[37mInvalid fd: [93m1.TIMEOUT
+[33m1.TIMEOUT[0m
+[37mfiles/empty: [32m1.OK [32m2.OK [0m
+[37mfiles/nl: [32m1.OK [32m2.OK [0m
+[37mfiles/41_no_nl: ==7226== Invalid read of size 1
+==7226==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7226==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7226==    by 0x405325: main (mandatory.cpp:45)
+==7226==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7226== 
+[93m1.SIGSEGV
+[37mfiles/41_with_nl: [32m1.OK ==7227== Invalid read of size 1
+==7227==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7227==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7227==    by 0x40561C: main (mandatory.cpp:50)
+==7227==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7227== 
+[93m2.SIGSEGV
+[37mfiles/42_no_nl: ==7228== Invalid read of size 1
+==7228==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7228==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7228==    by 0x405901: main (mandatory.cpp:56)
+==7228==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7228== 
+[93m1.SIGSEGV
+[37mfiles/42_with_nl: [32m1.OK ==7229== Invalid read of size 1
+==7229==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7229==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7229==    by 0x405BF8: main (mandatory.cpp:61)
+==7229==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7229== 
+[93m2.SIGSEGV
+[37mfiles/43_no_nl: ==7230== Invalid read of size 1
+==7230==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7230==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7230==    by 0x405EE7: main (mandatory.cpp:72)
+==7230==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7230== 
+[93m1.SIGSEGV
+[37mfiles/43_with_nl: [32m1.OK ==7231== Invalid read of size 1
+==7231==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7231==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7231==    by 0x4061DE: main (mandatory.cpp:77)
+==7231==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7231== 
+[93m2.SIGSEGV
+[37mfiles/multiple_nlx5: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [0m
+[37mfiles/multiple_line_no_nl: [32m1.OK [32m2.OK [32m3.OK [32m4.OK ==7233== Invalid read of size 1
+==7233==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7233==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7233==    by 0x406838: main (mandatory.cpp:92)
+==7233==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7233== 
+[93m5.SIGSEGV
+[37mfiles/multiple_line_with_nl: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [0m
+[37mfiles/alternate_line_nl_no_nl: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [32m7.OK [32m8.OK ==7235== Invalid read of size 1
+==7235==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7235==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7235==    by 0x406EDA: main (mandatory.cpp:110)
+==7235==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7235== 
+[93m9.SIGSEGV
+[37mfiles/alternate_line_nl_with_nl: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [32m7.OK [32m8.OK [32m9.OK [32m10.OK [0m
+[37mfiles/big_line_no_nl: ==7237== Invalid read of size 1
+==7237==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7237==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7237==    by 0x407534: main (mandatory.cpp:136)
+==7237==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7237== 
+[93m1.SIGSEGV
+[37mfiles/big_line_with_nl: [32m1.OK [32m2.OK [0m
+[37mstdin: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [32m7.OK [32m8.OK [32m9.OK [32m10.OK [0m
+
+[33m[Static = 1]
+[35m[Bonus]
+[37m[BUFFER_SIZE = 1]: [0m
+[37mInvalid fd: [93m1.TIMEOUT
+[33m1.TIMEOUT[0m
+[37mfiles/empty: [32m1.OK [32m2.OK [0m
+[37mfiles/nl: [32m1.OK [32m2.OK [0m
+[37mfiles/41_no_nl: ==7309== Invalid read of size 1
+==7309==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7309==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7309==    by 0x405325: main (mandatory.cpp:45)
+==7309==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7309== 
+[93m1.SIGSEGV
+[37mfiles/41_with_nl: [32m1.OK ==7310== Invalid read of size 1
+==7310==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7310==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7310==    by 0x40561C: main (mandatory.cpp:50)
+==7310==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7310== 
+[93m2.SIGSEGV
+[37mfiles/42_no_nl: ==7311== Invalid read of size 1
+==7311==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7311==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7311==    by 0x405901: main (mandatory.cpp:56)
+==7311==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7311== 
+[93m1.SIGSEGV
+[37mfiles/42_with_nl: [32m1.OK ==7312== Invalid read of size 1
+==7312==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7312==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7312==    by 0x405BF8: main (mandatory.cpp:61)
+==7312==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7312== 
+[93m2.SIGSEGV
+[37mfiles/43_no_nl: ==7313== Invalid read of size 1
+==7313==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7313==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7313==    by 0x405EE7: main (mandatory.cpp:72)
+==7313==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7313== 
+[93m1.SIGSEGV
+[37mfiles/43_with_nl: [32m1.OK ==7314== Invalid read of size 1
+==7314==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7314==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7314==    by 0x4061DE: main (mandatory.cpp:77)
+==7314==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7314== 
+[93m2.SIGSEGV
+[37mfiles/multiple_nlx5: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [0m
+[37mfiles/multiple_line_no_nl: [32m1.OK [32m2.OK [32m3.OK [32m4.OK ==7316== Invalid read of size 1
+==7316==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7316==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7316==    by 0x406838: main (mandatory.cpp:92)
+==7316==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7316== 
+[93m5.SIGSEGV
+[37mfiles/multiple_line_with_nl: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [0m
+[37mfiles/alternate_line_nl_no_nl: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [32m7.OK [32m8.OK ==7318== Invalid read of size 1
+==7318==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7318==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7318==    by 0x406EDA: main (mandatory.cpp:110)
+==7318==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7318== 
+[93m9.SIGSEGV
+[37mfiles/alternate_line_nl_with_nl: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [32m7.OK [32m8.OK [32m9.OK [32m10.OK [0m
+[37mfiles/big_line_no_nl: ==7320== Invalid read of size 1
+==7320==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7320==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7320==    by 0x407534: main (mandatory.cpp:136)
+==7320==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7320== 
+[93m1.SIGSEGV
+[37mfiles/big_line_with_nl: [32m1.OK [32m2.OK [0m
+[37mstdin: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [32m7.OK [32m8.OK [32m9.OK [32m10.OK [0m
+
+[37m[BUFFER_SIZE = 42]: [0m
+[37mInvalid fd: [93m1.TIMEOUT
+[33m1.TIMEOUT[0m
+[37mfiles/empty: [32m1.OK [32m2.OK [0m
+[37mfiles/nl: [32m1.OK [32m2.OK [0m
+[37mfiles/41_no_nl: ==7383== Invalid read of size 1
+==7383==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7383==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7383==    by 0x405325: main (mandatory.cpp:45)
+==7383==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7383== 
+[93m1.SIGSEGV
+[37mfiles/41_with_nl: [32m1.OK ==7384== Invalid read of size 1
+==7384==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7384==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7384==    by 0x40561C: main (mandatory.cpp:50)
+==7384==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7384== 
+[93m2.SIGSEGV
+[37mfiles/42_no_nl: ==7385== Invalid read of size 1
+==7385==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7385==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7385==    by 0x405901: main (mandatory.cpp:56)
+==7385==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7385== 
+[93m1.SIGSEGV
+[37mfiles/42_with_nl: [32m1.OK [32m2.OK [32m3.OK [0m
+[37mfiles/43_no_nl: ==7387== Invalid read of size 1
+==7387==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7387==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7387==    by 0x405F19: main (mandatory.cpp:72)
+==7387==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7387== 
+[93m1.SIGSEGV
+[37mfiles/43_with_nl: [32m1.OK ==7388== Invalid read of size 1
+==7388==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7388==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7388==    by 0x406210: main (mandatory.cpp:77)
+==7388==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7388== 
+[93m2.SIGSEGV
+[37mfiles/multiple_nlx5: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [0m
+[37mfiles/multiple_line_no_nl: [32m1.OK [32m2.OK [32m3.OK [32m4.OK ==7390== Invalid read of size 1
+==7390==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7390==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7390==    by 0x40686A: main (mandatory.cpp:92)
+==7390==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7390== 
+[93m5.SIGSEGV
+[37mfiles/multiple_line_with_nl: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [0m
+[37mfiles/alternate_line_nl_no_nl: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [32m7.OK [32m8.OK ==7392== Invalid read of size 1
+==7392==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7392==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7392==    by 0x406F0C: main (mandatory.cpp:110)
+==7392==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7392== 
+[93m9.SIGSEGV
+[37mfiles/alternate_line_nl_with_nl: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [32m7.OK [32m8.OK [32m9.OK [32m10.OK [0m
+[37mfiles/big_line_no_nl: ==7394== Invalid read of size 1
+==7394==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7394==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7394==    by 0x407566: main (mandatory.cpp:136)
+==7394==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7394== 
+[93m1.SIGSEGV
+[37mfiles/big_line_with_nl: [32m1.OK [32m2.OK [0m
+[37mstdin: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [32m7.OK [32m8.OK [32m9.OK [32m10.OK [0m
+
+[37m[BUFFER_SIZE = 10000000]: [0m
+[37mInvalid fd: [93m1.TIMEOUT
+[33m1.TIMEOUT[0m
+[37mfiles/empty: [32m1.OK [32m2.OK [0m
+[37mfiles/nl: [32m1.OK [32m2.OK [0m
+[37mfiles/41_no_nl: ==7443== Invalid read of size 1
+==7443==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7443==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7443==    by 0x405325: main (mandatory.cpp:45)
+==7443==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7443== 
+[93m1.SIGSEGV
+[37mfiles/41_with_nl: [32m1.OK ==7444== Invalid read of size 1
+==7444==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7444==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7444==    by 0x40561C: main (mandatory.cpp:50)
+==7444==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7444== 
+[93m2.SIGSEGV
+[37mfiles/42_no_nl: ==7445== Invalid read of size 1
+==7445==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7445==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7445==    by 0x405901: main (mandatory.cpp:56)
+==7445==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7445== 
+[93m1.SIGSEGV
+[37mfiles/42_with_nl: [32m1.OK ==7446== Invalid read of size 1
+==7446==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7446==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7446==    by 0x405BF8: main (mandatory.cpp:61)
+==7446==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7446== 
+[93m2.SIGSEGV
+[37mfiles/43_no_nl: ==7447== Invalid read of size 1
+==7447==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7447==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7447==    by 0x405EE7: main (mandatory.cpp:72)
+==7447==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7447== 
+[93m1.SIGSEGV
+[37mfiles/43_with_nl: [32m1.OK ==7448== Invalid read of size 1
+==7448==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7448==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7448==    by 0x4061DE: main (mandatory.cpp:77)
+==7448==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7448== 
+[93m2.SIGSEGV
+[37mfiles/multiple_nlx5: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [0m
+[37mfiles/multiple_line_no_nl: [32m1.OK [32m2.OK [32m3.OK [32m4.OK ==7450== Invalid read of size 1
+==7450==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7450==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7450==    by 0x406838: main (mandatory.cpp:92)
+==7450==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7450== 
+[93m5.SIGSEGV
+[37mfiles/multiple_line_with_nl: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [0m
+[37mfiles/alternate_line_nl_no_nl: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [32m7.OK [32m8.OK ==7452== Invalid read of size 1
+==7452==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7452==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7452==    by 0x406EDA: main (mandatory.cpp:110)
+==7452==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7452== 
+[93m9.SIGSEGV
+[37mfiles/alternate_line_nl_with_nl: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [32m7.OK [32m8.OK [32m9.OK [32m10.OK [0m
+[37mfiles/big_line_no_nl: ==7454== Invalid read of size 1
+==7454==    at 0x484E1D4: strcmp (vg_replace_strmem.c:940)
+==7454==    by 0x402C0A: gnl(int, char const*) (gnl.cpp:24)
+==7454==    by 0x407534: main (mandatory.cpp:136)
+==7454==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==7454== 
+[93m1.SIGSEGV
+[37mfiles/big_line_with_nl: [32m1.OK [32m2.OK [0m
+[37mstdin: [32m1.OK [32m2.OK [32m3.OK [32m4.OK [32m5.OK [32m6.OK [32m7.OK [32m8.OK [32m9.OK [32m10.OK [0m
+
+[37m[BUFFER_SIZE = 1]: [0m
+[37mmultiple fd: [93m1.TIMEOUT
+[37m[BUFFER_SIZE = 42]: [0m
+[37mmultiple fd: [93m1.TIMEOUT
+[37m[BUFFER_SIZE = 10000000]: [0m
+[37mmultiple fd: [93m1.TIMEOUT
+
+To see the tests open: /home/jandreu/francinette/tests/get_next_line/gnlTester/tests/mandatory.cpp
+and the bonus open: /home/jandreu/francinette/tests/get_next_line/gnlTester/tests/bonus.cpp
+
+ℹ Running tests: fsoares (my own tests)
+[1;35mBUFFER_SIZE[0m: 1
+[0;34mInvalid fd          [0m: [0;32m1.OK [0m[0;33m2.KO Timeout
+[0mmake: [Makefile:23: mandatory] Error 139 (no tiene efecto)
+[1;35mBUFFER_SIZE[0m: 10
+[0;34mInvalid fd          [0m: [0;32m1.OK [0m[0;33m2.KO Timeout
+[0mmake: [Makefile:24: mandatory] Error 139 (no tiene efecto)
+[1;35mBUFFER_SIZE[0m: 1000000
+[0;34mInvalid fd          [0m: [0;32m1.OK [0m[0;33m2.KO Timeout
+[0mmake: [Makefile:25: mandatory] Error 139 (no tiene efecto)
+[33mBONUS!
+[1;35mBUFFER_SIZE[0m: 1
+[0;34mInvalid fd          [0m: [0;32m1.OK [0m[0;33m2.KO Timeout
+[0mmake: [Makefile:29: bonus] Error 139 (no tiene efecto)
+[1;35mBUFFER_SIZE[0m: 10
+[0;34mInvalid fd          [0m: [0;32m1.OK [0m[0;33m2.KO Timeout
+[0mmake: [Makefile:30: bonus] Error 139 (no tiene efecto)
+[1;35mBUFFER_SIZE[0m: 1000000
+[0;34mInvalid fd          [0m: [0;32m1.OK [0m[0;33m2.KO Timeout
+[0mmake: [Makefile:31: bonus] Error 139 (no tiene efecto)
+[1;35mBUFFER_SIZE[0m: 1
+[0;34mopen, error, open   [0m: [0;32m1.OK [0m[0;32m2.OK [0m[0;32m3.OK [0m[0;32m4.OK [0m[0;31m5.KO [0m[0;32m6.OK [0m[0;32m7.OK [0m[0;32m8.OK [0m[0;32m9.OK [0m[0;32m10.OK [0m[0;32m11.OK [0m[0;32m12.OK [0m[0;32m13.OK [0m[0;32m14.OK [0m[0;31m15_LEAKS.KO [0m
+make: [Makefile:32: bonus] Error 139 (no tiene efecto)
+[1;35mBUFFER_SIZE[0m: 10
+[0;34mopen, error, open   [0m: [0;32m1.OK [0m[0;32m2.OK [0m[0;32m3.OK [0m[0;32m4.OK [0m[0;31m5.KO [0m[0;32m6.OK [0m[0;31m7.KO [0m[0;32m8.OK [0m[0;32m9.OK [0m[0;32m10.OK [0m[0;32m11.OK [0m[0;32m12.OK [0m[0;32m13.OK [0m[0;32m14.OK [0m[0;31m15_LEAKS.KO [0m
+make: [Makefile:33: bonus] Error 139 (no tiene efecto)
+[1;35mBUFFER_SIZE[0m: 1000000
+[0;34mopen, error, open   [0m: [0;32m1.OK [0m[0;32m2.OK [0m[0;32m3.OK [0m[0;32m4.OK [0m[0;32m5.OK [0m[0;32m6.OK [0m[0;32m7.OK [0m[0;32m8.OK [0m[0;32m9.OK [0m[0;32m10.OK [0m[0;32m11.OK [0m[0;32m12.OK [0m[0;32m13.OK [0m[0;32m14.OK [0m[0;32m15_LEAKS.OK [0m
+[0;34m2 file descriptors  [0m: [0;32m1.OK [0m[0;32m2.OK [0m[0;32m3.OK [0m[0;32m4.OK [0m[0;32m5.OK [0m[0;32m6.OK [0m[0;32m7.OK [0m[0;32m8.OK [0m[0;32m9.OK [0m[0;32m10.OK [0m[0;32m11.OK [0m[0;32m12.OK [0m[0;32m13_LEAKS.OK [0m
+[0;34mmultiple fds        [0m: [0;32m1.OK [0m[0;32m2.OK [0m[0;32m3.OK [0m[0;32m4.OK [0m[0;32m5.OK [0m[0;32m6.OK [0m[0;32m7.OK [0m[0;32m8.OK [0m[0;32m9.OK [0m[0;32m10.OK [0m[0;32m11.OK [0m[0;32m12.OK [0m[0;31m13.KO [0m[0;32m14.OK [0m[0;32m15.OK [0m[0;32m16.OK [0m[0;32m17.OK [0m[0;32m18.OK [0m[0;32m19.OK [0m[0;32m20.OK [0m[0;32m21.OK [0m[0;32m22.OK [0m[0;31m23_LEAKS.KO [0m
+make: [Makefile:34: bonus] Error 139 (no tiene efecto)
+⠋ Processing output⠙ Processing outputErrors found:
+
+To see the tests open: /home/jandreu/francinette/tests/get_next_line/fsoares/tester.c
+and the bonus open: /home/jandreu/francinette/tests/get_next_line/fsoares/bonus.c
+
+
+Summary: 
+
+Norminette Errors: get_next_line.c, tester.c, tester2.c, get_next_line_bonus.c
+
+Failed tests: gnlTester, fsoares
+
