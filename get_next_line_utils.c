@@ -6,7 +6,7 @@
 /*   By: antandre <antandre@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/17 16:08:42 by antandre          #+#    #+#             */
-/*   Updated: 2024/07/30 13:41:00 by antandre         ###   ########.fr       */
+/*   Updated: 2024/07/31 13:54:09 by antandre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,9 @@ int	ft_isnewline(char *buffer)
 {
 	int	i;
 
-	i = 0;
 	if (!buffer)
-	{
 		return (-1);
-	}
+	i = 0;
 	while (buffer[i])
 	{
 		if (buffer[i] == '\n')
@@ -55,7 +53,7 @@ int	ft_strncat(char **saved, char *buffer, int size)
 		str = malloc(((ft_strlen(*saved) + size) + 1) * sizeof(char));
 	if (!str)
 		return (0);
-	while (*saved && (*saved)[i] != '\0')
+	while (*saved && (*saved)[i])
 	{
 		str[i] = (*saved)[i];
 		i++;

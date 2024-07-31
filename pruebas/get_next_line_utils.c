@@ -6,21 +6,19 @@
 /*   By: antandre <antandre@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/17 16:08:42 by antandre          #+#    #+#             */
-/*   Updated: 2024/07/30 13:41:00 by antandre         ###   ########.fr       */
+/*   Updated: 2024/07/31 14:17:11 by antandre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line_bonus.h"
+#include "get_next_line.h"
 
 int	ft_isnewline(char *buffer)
 {
 	int	i;
 
-	i = 0;
 	if (!buffer)
-	{
 		return (-1);
-	}
+	i = 0;
 	while (buffer[i])
 	{
 		if (buffer[i] == '\n')
@@ -42,6 +40,24 @@ int	ft_strlen(char *str)
 	return (i);
 }
 
+size_t	ft_strlcpy(char *dst, char *src, size_t dsize)
+{
+	size_t	slen;
+	size_t	i;
+
+	slen = ft_strlen(src);
+	i = 0;
+	if (dsize < 1)
+		return (slen);
+	while (src[i] != '\0' && i < dsize - 1)
+	{
+		dst[i] = src[i];
+		i++;
+	}
+	dst[i] = '\0';
+	return (slen);
+}
+
 int	ft_strncat(char **saved, char *buffer, int size)
 {
 	int		i;
@@ -55,7 +71,7 @@ int	ft_strncat(char **saved, char *buffer, int size)
 		str = malloc(((ft_strlen(*saved) + size) + 1) * sizeof(char));
 	if (!str)
 		return (0);
-	while (*saved && (*saved)[i] != '\0')
+	while (*saved && (*saved)[i])
 	{
 		str[i] = (*saved)[i];
 		i++;
@@ -78,23 +94,38 @@ char	*ft_strtrim_jump(char **saved)
 	int		i;
 	int		j;
 
-	i = -1;
-	strcut = malloc((ft_isnewline(*saved) + 2) * sizeof(char));
+	if (!*saved)
+		return (NULL);
+	i = 0;
+	// Calculate the length of the line to be returned
+	while ((*saved)[i] && (*saved)[i] != '\n')
+		i++;
+	// Include newline if present
+	if ((*saved)[i] == '\n')
+		i++;
+	strcut = malloc((i + 1) * sizeof(char));
 	if (!strcut)
 		return (NULL);
-	while ((*saved)[++i] != '\n')
-		strcut[i] = (*saved)[i];
-	strcut[i++] = '\n';
+	ft_strlcpy(strcut, *saved, i); // Copy line to strcut
 	strcut[i] = '\0';
-	strsaved = NULL;
-	if ((*saved)[i])
+
+	// Prepare the remaining data in saved
+	if ((*saved)[i] != '\0')
 	{
-		j = 0;
 		strsaved = malloc((ft_strlen(&(*saved)[i]) + 1) * sizeof(char));
+		if (!strsaved)
+		{
+			free(strcut);
+			return (NULL);
+		}
+		j = 0;
 		while ((*saved)[i])
 			strsaved[j++] = (*saved)[i++];
 		strsaved[j] = '\0';
 	}
+	else
+		strsaved = NULL; // No more data left
+
 	free(*saved);
 	*saved = strsaved;
 	return (strcut);

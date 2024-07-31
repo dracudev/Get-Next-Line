@@ -6,7 +6,7 @@
 /*   By: antandre <antandre@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/17 15:29:42 by antandre          #+#    #+#             */
-/*   Updated: 2024/07/30 16:01:11 by antandre         ###   ########.fr       */
+/*   Updated: 2024/07/31 13:58:50 by antandre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*get_next_line(int fd)
 	int			readed;
 	char		*buffer;
 
-	if (fd == -1)
+	if (fd < 0 || fd >= 1024 || BUFFER_SIZE <= 0)
 		return (NULL);
 	if (saved[fd] && ft_isnewline(saved[fd]) > -1)
 		return (ft_strtrim_jump(&saved[fd]));
@@ -36,7 +36,8 @@ char	*get_next_line(int fd)
 				readed = ft_strncat(&saved[fd], buffer, readed);
 			free(buffer);
 			buffer = NULL;
-			//Si readed == 0 (Es decir fin de archivo EOF) printamos lo que haya en saved (si hay) y borramos saved.
+			//TODO Si no hay salto de linea pero readed > 0 printamos saved y borramos saved.
+			//TODO Si readed == 0 (EOF) printamos lo que haya en saved (si hay) y borramos saved.
 			if (readed == 0)
 				return (NULL);
 		}
