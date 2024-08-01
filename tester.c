@@ -6,7 +6,7 @@
 /*   By: antandre <antandre@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/25 10:55:56 by antandre          #+#    #+#             */
-/*   Updated: 2024/07/30 15:02:22 by antandre         ###   ########.fr       */
+/*   Updated: 2024/08/01 10:56:00 by antandre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,9 @@ int main(int argc, char *argv[])
             continue;
         }
         printf("Reading from %s:\n", argv[i]);
-        while (line || line == NULL)
+        while (1)
         {
-            printf("Retrieved line: %s", line);
+            printf("Retrieved line: %s\n", line);
             if (line == NULL)
 				break;
 			free(line);

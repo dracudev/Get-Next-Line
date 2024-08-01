@@ -6,7 +6,7 @@
 /*   By: antandre <antandre@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/30 10:45:37 by antandre          #+#    #+#             */
-/*   Updated: 2024/07/30 13:29:02 by antandre         ###   ########.fr       */
+/*   Updated: 2024/08/01 15:25:16 by antandre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,8 @@ int	main(void)
 	char	*line;
 
 	x = 15;
-	fd = open("42", O_RDONLY);
+	//fd = open("char1" O_RDONLY);
+	fd = 0;
 	//fd2 = open("B", O_RDONLY);
 	while (--x > 0)
 	{
