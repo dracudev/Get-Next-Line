@@ -1,3 +1,5 @@
+>**This function is now part of <a href="https://github.com/dracudev/Libft" target="_blank">Libft</a>**
+
 # Get-Next-Line
 
 The Get Next Line project aims to create a function in C that reads and returns a line from a given file descriptor. This function is designed to handle various edge cases and should work efficiently even with varying buffer sizes. This project not only provides a useful function but also introduces the concept of static variables in C programming.
