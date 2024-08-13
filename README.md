@@ -116,7 +116,7 @@ int main() {
 
 ## Get_next_line_utils.c
 
-### [ft_isnewline](get_next_line_utils.c)
+### [ft_isnewline](src/get_next_line_utils.c)
 
 The ft_isnewline function checks if there is a newline character (\n) in the given buffer and returns its position if found. If the buffer is NULL or no newline character is present, it returns -1.
 
@@ -149,7 +149,7 @@ int	ft_isnewline(char *buffer)
 
 <br>
 
-### [ft_strlen](get_next_line_utils.c)
+### [ft_strlen](src/get_next_line_utils.c)
 
 The `ft_strlen` function calculates the length of a given string by counting the number of characters until the null terminator (`\0`). If the string is `NULL`, it returns `0`.
 
@@ -178,7 +178,7 @@ int	ft_strlen(char *str)
 
 <br>
 
-### [ft_strncat](get_next_line_utils.c)
+### [ft_strncat](src/get_next_line_utils.c)
 
 The `ft_strncat` function concatenates a specified number of characters from the `buffer` string to the end of the `saved` string. It dynamically allocates memory for the concatenated result and updates the `saved` pointer to point to the new string.
 
@@ -231,7 +231,7 @@ int	ft_strncat(char **saved, char *buffer, int size)
 
 <br>
 
-### [ft_strtrim_jump](get_next_line_utils.c)
+### [ft_strtrim_jump](src/get_next_line_utils.c)
 
 The `ft_strtrim_jump` function extracts a substring from the beginning of `saved` up to and including the first newline character (`\n`). It then updates `saved` to contain only the remaining part of the original string after the newline character. The extracted substring is returned, while the original string is modified.
 
@@ -283,7 +283,7 @@ char	*ft_strtrim_jump(char **saved)
 
 ## Get_next_line.c
 
-### [get_last_line](get_next_line.c)
+### [get_last_line](src/get_next_line.c)
 
 The `get_last_line` function extracts the entire string stored in `saved`, returning it as a new string. After extracting the string, it frees the memory associated with `saved` and sets `saved` to `NULL`.
 
@@ -325,7 +325,7 @@ char	*get_last_line(char **saved)
 
 <br>
 
-### [ft_readfd](get_next_line.c)
+### [ft_readfd](src/get_next_line.c)
 
 The `ft_readfd` function reads data from a file descriptor `fd` into the `saved` string until a newline character (`\n`) is found or the end of the file is reached. The function returns a string up to the newline character or the remaining content of the file if no newline is found.
 
@@ -377,7 +377,7 @@ char	*ft_readfd(char **saved, int fd)
 
 <br>
 
-### [get_next_line](get_next_line.c)
+### [get_next_line](src/get_next_line.c)
 
 The `get_next_line` function reads and returns the next line from a file descriptor `fd`, including the newline character (`\n`) if present. It handles multiple file descriptors simultaneously by using a static array to keep track of the saved state for each file descriptor.
 
